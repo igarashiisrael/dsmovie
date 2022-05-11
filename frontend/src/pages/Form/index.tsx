@@ -5,8 +5,8 @@ function Form() {
 
   const movie = {
     id: 1,
-    image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-    title: "The Witcher",
+    image: "https://www.themoviedb.org/t/p/original/6ugms2mkEcuO0nBOWKDG746G88q.jpg",
+    title: "Your Name",
     count: 2,
     score: 4.5
   };
