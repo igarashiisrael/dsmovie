@@ -1,19 +1,14 @@
 import MovieScore from "components/MovieScore";
 import { Link } from "react-router-dom";
+import { Movie } from "types/movie";
 
-function MovieCard() {
+type Props = {
+  movie: Movie;
+}
 
-  const movie = {
-    id: 1,
-    image: "https://www.themoviedb.org/t/p/original/6ugms2mkEcuO0nBOWKDG746G88q.jpg",
-    title: "Your Name",
-    count: 2,
-    score: 4.5
-  };
-
+function MovieCard({ movie }: Props) {
 
   return (
-
     <div>
       <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
       <div className="dsmovie-card-bottom-container">
@@ -25,8 +20,9 @@ function MovieCard() {
         </Link>
 
       </div>
-    </div >
+    </div>
 
   );
 }
+
 export default MovieCard;
